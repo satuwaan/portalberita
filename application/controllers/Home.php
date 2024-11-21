@@ -16,6 +16,4 @@ class Home extends CI_Controller{
 	function about(){
 		$this->load->view('v_pendaftaran');
 	}
-
-
 }

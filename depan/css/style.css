@@ -91,6 +91,30 @@ h1, h2, h3, h4, h5, h6 {
   float: left;
 }
 
+#logo {
+  display: flex;
+  align-items: center; /* Mengatur gambar dan teks agar sejajar secara vertikal */
+}
+
+#logo .logo-image {
+  width: 5px;  /* Atur ukuran logo */
+  height: auto;  /* Menjaga rasio aspek */
+  margin-right: 10px; /* Spasi antara logo dan ikon */
+}
+
+#logo .icon-image {
+  width: 5px;  /* Ukuran untuk ikon */
+  height: auto;  /* Menjaga rasio aspek ikon */
+  margin-left: 5px; /* Spasi antara ikon dan teks */
+}
+
+#logo h1, #logo h3 {
+  margin: 0;
+  padding-left: 10px; /* Menambah jarak antara gambar dengan teks */
+}
+
+
+
 @media (min-width: 1024px) {
   #header #logo {
     padding-left: 60px;
@@ -1303,6 +1327,62 @@ body.mobile-nav-active #mobile-nav-toggle {
 
 #contact .form button[type="submit"]:hover {
   background: #13a456;
+}
+
+#agenda .agenda-section {
+  padding: 40px 0;
+  background-color: #f0f2f5;
+}
+
+#agenda .table-container {
+  width: 80%;
+  margin: auto;
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+
+h2 {
+  text-align: center;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+/* Responsive styling */
+@media (max-width: 768px) {
+  .table-container h2 {
+      font-size: 1.5em;
+  }
+  
+  thead {
+      display: none;
+  }
+  
+  table, tbody, tr, td, th {
+      display: block;
+      width: 100%;
+  }
+  
+  tbody tr {
+      margin-bottom: 15px;
+  }
+  
+  tbody td {
+      padding: 8px;
+      border: none;
+      position: relative;
+      text-align: left;
+  }
+  
+  tbody td:before {
+      content: attr(data-label);
+      position: absolute;
+      left: 0;
+      font-weight: bold;
+      padding-right: 10px;
+      color: #555;
+  }
 }
 
 /*--------------------------------------------------------------

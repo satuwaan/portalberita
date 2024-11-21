@@ -51,6 +51,10 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 */
 $route['artikel']='blog';
 $route['artikel/(:any)']='blog/detail/$1';
+$route['Isiberita/(:num)'] = 'Isiberita/detail/$1';
+$route['program'] = 'program/index';
+$route['agenda'] = 'Agenda';
+
 
 $route['default_controller'] = 'home';
 $route['404_override'] = '';

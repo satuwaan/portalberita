@@ -30,14 +30,21 @@ class M_tulisan extends CI_Model{
 		$hsl=$this->db->query("delete from tbl_tulisan where tulisan_id='$kode'");
 		return $hsl;
 	}
-
-
-
+	
 	//Front-End
 
 	function get_post_home(){
-		$hsl=$this->db->query("SELECT tbl_tulisan.*,DATE_FORMAT(tulisan_tanggal,'%d %M %Y') AS tanggal FROM tbl_tulisan where tulisan_status='1' ORDER BY tulisan_id DESC limit 6");
+		$hsl=$this->db->query("SELECT tbl_tulisan.*,DATE_FORMAT(tulisan_tanggal,'%d %M %Y') AS tanggal FROM tbl_tulisan ORDER BY tulisan_id DESC");
 		return $hsl;
+	}
+
+	function get_post_isi(){
+		$hsl=$this->db->query("SELECT tbl_tulisan.*,DATE_FORMAT(tulisan_tanggal,'%d %M %Y') AS tanggal FROM tbl_tulisan where tulisan_id");
+		return $hsl;
+	}
+
+	public function getBeritaById($id) {
+		return $this->db->get_where('tbl_tulisan', ['tulisan_id' => $id])->row();
 	}
 
 	function get_berita_slider(){

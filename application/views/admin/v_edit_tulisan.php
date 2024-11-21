@@ -11,7 +11,7 @@
   <title> Update Post </title>
   <!-- Tell the browser to be responsive to screen width -->
   <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
-  <link rel="shorcut icon" type="text/css" href="<?php echo base_url().'assets/images/favicon.png'?>">
+  <link rel="shorcut icon" type="text/css" href="<?php echo base_url().'assets/images/iconkim.png'?>">
   <!-- Bootstrap 3.3.6 -->
   <link rel="stylesheet" href="<?php echo base_url().'assets/bootstrap/css/bootstrap.min.css'?>">
   <!-- Font Awesome -->
@@ -164,7 +164,7 @@
     <div class="pull-right hidden-xs">
       
     </div>
-    <strong>Copyright &copy; 2018  By Hermanto </a>.</strong> All rights reserved.
+    <strong>Copyright &copy; PORTAL BERITA KIM KP </a>.</strong> All rights reserved.
   </footer>
 
  

@@ -51,9 +51,22 @@
             </span>
           </a>
         </li>
-
-
-    
+        <li>
+          <a href="<?php echo base_url().'admin/Program'?>">
+            <i class="fa fa-file"></i> <span> Data Program</span>
+            <span class="pull-right-container">
+              <small class="label pull-right"></small>
+            </span>
+          </a>
+        </li>
+        <li>
+          <a href="<?php echo base_url().'admin/Agenda'?>">
+            <i class="fa fa-folder"></i> <span> Data Agenda</span>
+            <span class="pull-right-container">
+              <small class="label pull-right"></small>
+            </span>
+          </a>
+        </li>
         <li>
           <a href="<?php echo base_url().'admin/pengguna'?>">
             <i class="fa fa-user"></i> <span> Data Pengguna</span>

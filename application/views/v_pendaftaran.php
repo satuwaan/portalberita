@@ -6,6 +6,7 @@
     <title>SignUp Portal Berita</title>
     <meta name="description" content="Love Authority." />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shorcut icon" type="text/css" href="<?php echo base_url().'assets/images/iconkim.png'?>">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css" />
     <link rel="stylesheet" href="<?php echo base_url() . 'login/css/style.css' ?>" />

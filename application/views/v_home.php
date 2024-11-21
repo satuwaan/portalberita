@@ -7,7 +7,7 @@
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <meta content="" name="keywords">
     <meta content="" name="description">
-    <!-- <link rel="shorcut icon" type="text/css" href="<?php echo base_url() . 'assets/images/favicon.png' ?>"> -->
+    <link rel="shorcut icon" type="text/css" href="<?php echo base_url().'assets/images/iconkim.png'?>">
 
     <!-- Bootstr<ap CSS File -->
     <link href="<?php echo base_url() . 'depan/lib/bootstrap/css/bootstrap.min.css' ?>" rel="stylesheet">
@@ -31,38 +31,36 @@
     Header
   ============================-->
     <header id="header">
-        <div class="container-fluid">
-            <div id="logo" class="pull-left">
+    <div class="container-fluid">
+    <div id="logo" class="pull-left">
+        <img src="<?php echo base_url() . 'theme/images/logokim.jpg' ?>" alt="Logo" class="logo-image">
+        <img src="<?php echo base_url() . 'theme/images/logoakprind.png' ?>" alt="Icon" class="icon-image"> <!-- Icon baru -->
+        <h1>PORTAL KIM KP</h1>
+        <h3>BERITA SEPUTAR KULON PROGO</h3>
+    </div>
 
-                <h1>PORTAL KIM KP</h1>
-                <h3>BERITA SEPUTAR KIM KP</h3>
-
-
-            </div>
-
-            <nav id="nav-menu-container">
-                <ul class="nav-menu">
-                    <li class="menu-active"><a href="<?php echo base_url() . 'Home' ?>">Home</a></li>
-                    <li class="menu-has-children"><a href="">Berita</a>
-                        <ul>
-                            <?php 
-                            $query = $this->db->get('tbl_kategori');
-                            foreach ($query->result() as $row) :
-                            ?>
-                            <li><a class="dropdown-item nav-link nav_item" href="#about">
-                                    <?php echo strtoupper($row->kategori_nama); ?></a></li>
-                            <?php endforeach; ?>
-                        </ul>
-                    </li>
-                    <li><a href="<?php echo base_url() . 'pendaftaran' ?>">Program</a></li>
-                    <li><a href="<?php echo base_url() . 'user/user' ?>">Agenda</a></li>
-                    <li><a href="#contact">Kontributor</a></li>
-                    <li><a href="#portfolio">Gallery</a></li>
-                    <li><a href="<?php echo base_url() . 'Administrator' ?>">LOGIN ADMIN</a></li>
+    <nav id="nav-menu-container">
+        <ul class="nav-menu">
+            <li class="menu-active"><a href="<?php echo base_url() . 'Home' ?>">Home</a></li>
+            <li class="menu-has-children"><a href="">Berita</a>
+                <ul>
+                    <?php 
+                    $query = $this->db->get('tbl_kategori');
+                    foreach ($query->result() as $row) :
+                    ?>
+                    <li><a class="dropdown-item nav-link nav_item" href="#about">
+                            <?php echo strtoupper($row->kategori_nama); ?></a></li>
+                    <?php endforeach; ?>
                 </ul>
-            </nav><!-- #nav-menu-container -->
-        </div>
-
+            </li>
+            <li><a href="<?php echo base_url() . 'program' ?>">Program</a></li>
+            <li><a href="<?php echo base_url() . 'agenda' ?>">Agenda</a></li>
+            <li><a href="#contact">Kontributor</a></li>
+            <li><a href="#portfolio">Gallery</a></li>
+            <li><a href="<?php echo base_url() . 'Administrator' ?>">LOGIN ADMIN</a></li>
+        </ul>
+    </nav><!-- #nav-menu-container -->
+</div>
 
     </header><!-- #header -->
 
@@ -72,19 +70,16 @@
     <section id="intro">
         <div class="intro-container">
             <div id="introCarousel" class="carousel  slide carousel-fade" data-ride="carousel">
-
                 <ol class="carousel-indicators"></ol>
-
                 <div class="carousel-inner" role="listbox">
-
                     <div class="carousel-item active">
-                        <div class="carousel-background"><img src="<?php echo base_url() . 'theme/images/pkm2.jpg' ?>"
+                        <div class="carousel-background"><img src="<?php echo base_url() . 'theme/images/kim1.jpg' ?>"
                                 alt=""></div>
                         <div class="carousel-container">
                             <div class="carousel-content">
-                                <h2>Portal Berita KODING</h2>
+                                <h2>Portal Berita KIM Kulon Progo</h2>
                                 <h3>
-                                    <p>Ayo buat dan Portal Berita terbaikmu </p>
+                                    <p>Membagikan Informasi Seputar Kulon Progo </p>
                                 </h3>
 
                             </div>
@@ -92,65 +87,56 @@
                     </div>
 
                     <div class="carousel-item">
-                        <div class="carousel-background"><img src="<?php echo base_url() . 'theme/images/pkm2.jpg' ?>"
+                        <div class="carousel-background"><img src="<?php echo base_url() . 'theme/images/kim2.jpg' ?>"
                                 alt=""></div>
                         <div class="carousel-container">
                             <div class="carousel-content">
-                                <h2>Portal Berita</h2>
+                                <h2>Akses Seluas Luasnya Informasi</h2>
                                 <h3>
                                     <p>Ayo buat dan Portal Berita terbaikmu </p>
                                 </h3>
-
-
                             </div>
                         </div>
                     </div>
 
                     <div class="carousel-item">
-                        <div class="carousel-background"><img src="<?php echo base_url() . 'theme/images/pkm3.jpg' ?>"
+                        <div class="carousel-background"><img src="<?php echo base_url() . 'theme/images/kim3.jpg' ?>"
                                 alt=""></div>
                         <div class="carousel-container">
                             <div class="carousel-content">
-                                <h2>Portal Berita</h2>
+                                <h2>Mari bergabung bersama kami</h2>
                                 <h3>
                                     <p>Ayo buat dan Portal Berita terbaikmu </p>
                                 </h3>
-
-
                             </div>
                         </div>
                     </div>
 
                     <div class="carousel-item">
-                        <div class="carousel-background"><img src="<?php echo base_url() . 'theme/images/pkm4.jpg' ?>"
+                        <div class="carousel-background"><img src="<?php echo base_url() . 'theme/images/kim4.jpeg' ?>"
                                 alt=""></div>
                         <div class="carousel-container">
                             <div class="carousel-content">
-                                <h2>Portal Berita</h2>
+                                <h2>Jadikan Kegiatanmu Sebagai Informasi</h2>
                                 <h3>
                                     <p>Ayo buat dan Portal Berita terbaikmu </p>
                                 </h3>
-
-
                             </div>
                         </div>
                     </div>
 
                     <div class="carousel-item">
-                        <div class="carousel-background"><img src="<?php echo base_url() . 'theme/images/pkm5.jpg' ?>"
+                        <div class="carousel-background"><img src="<?php echo base_url() . 'theme/images/kim5.jpeg' ?>"
                                 alt=""></div>
                         <div class="carousel-container">
                             <div class="carousel-content">
-                                <h2>Portal Berita</h2>
+                                <h2>Untuk Perkembangan Kulon Progo</h2>
                                 <h3>
                                     <p>Ayo buat dan Portal Berita terbaikmu </p>
                                 </h3>
-
-
                             </div>
                         </div>
                     </div>
-
                 </div>
 
                 <a class="carousel-control-prev" href="#introCarousel" role="button" data-slide="prev">
@@ -166,61 +152,47 @@
             </div>
         </div>
     </section><!-- #intro -->
-
     <main id="main">
-
-
 
         <!--==========================
       About Us Section
     ============================-->
-        <section id="about">
-            <div class="container">
+    <section id="about">
+    <div class="container">
 
-                <header class="section-header">
-                    <h3>NEWS BERITA KIM KP</h3>
-                    <p>BERITA SEPUTAR KIM KULON PROGO
-                    </p>
-                </header>
-
-                <div class="row about-cols">
-
-
-                    <?php foreach ($data->result() as $row) : ?>
-
-                    <div class="col-md-4 wow fadeInUp">
-                        <div class="about-col">
-                            <div class="img">
-                                <img src="<?php echo base_url() . 'assets/images/' . $row->tulisan_gambar ?>" alt=""
-                                    class="img-fluid">
-                                <header class="section-header">
-                                    <h3><?php echo $row->tulisan_kategori_nama; ?></h3>
-                                </header>
-                            </div>
-                            <h2 class="title"><a href="#"><?php echo $row->tulisan_judul; ?></a>
-                            </h2>
-                            <p>
-                                <?php echo substr($row->tulisan_isi, 0, 100) . '...'; ?>
-                            </p>
-                        </div>
+        <header class="section-header">
+            <h3>NEWS BERITA KIM KP</h3>
+            <p>BERITA SEPUTAR KULON PROGO</p>
+        </header>
+        <div class="row about-cols">
+            <?php
+            foreach ($data->result() as $row) :
+            ?>
+            <div class="col-md-4 wow fadeInUp">
+                <div class="about-col">
+                    <div class="img">
+                        <img src="<?php echo base_url() . 'assets/images/' . $row->tulisan_gambar ?>" alt="" class="img-fluid">
+                        <header class="section-header">
+                            <h3><?php echo $row->tulisan_kategori_nama; ?></h3>
+                        </header>
                     </div>
-                    <?php endforeach; ?>
-
-
-
-
+                    <h2 class="title">
+                        <a class="btn" href="<?php echo base_url(). 'index.php/Isiberita/' . $row->tulisan_id ?>">
+                            <?php echo substr($row->tulisan_judul, 0, 35) . '...'; ?>
+                        </a>
+                    </h2>
+                    <p>
+                        <?php echo substr($row->tulisan_isi, 0, 100) . '...'; ?>
+                    </p>
                 </div>
-
             </div>
-        </section><!-- #about -->
-
-
-
-
+            <?php endforeach; ?>
+        </div>
+    </div>
+</section><!-- #about -->
 
         <section id="portfolio" class="section-bg">
             <div class="container">
-
                 <header class="section-header">
                     <h3 class="section-title">GALLERY</h3>
                 </header>
@@ -237,7 +209,6 @@
                 </div>
 
                 <div class="row portfolio-container">
-
                     <?php foreach ($album->result() as $row) : ?>
                     <div class="col-lg-4 col-md-6 portfolio-item filter-app wow fadeInUp">
                         <div class="portfolio-wrap">
@@ -270,8 +241,17 @@
             <div class="container">
 
                 <div class="section-header">
-                    <h3>Contact Us</h3>
-                    <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque</p>
+                    <h3>Kontributor</h3>
+                    <p>Tim Redaksi
+                        <br>Direktur Zazin (Ketua Forum KIM Kulon Progo)</br>
+                        Sekretaris Eka
+                        <br>Bendahara Nanang
+                    </p>
+                    <p>Tim Media
+                        <br>Putut</br>
+                       Bisma
+
+                    </p>
                 </div>
 
                 <div class="row contact-info">
@@ -279,16 +259,16 @@
                     <div class="col-md-4">
                         <div class="contact-address">
                             <i class="ion-ios-location-outline"></i>
-                            <h3>Address</h3>
-                            <address>A108 Adam Street, NY 535022, USA</address>
+                            <h3>Alamat</h3>
+                            <address>Media Center Kulon Progo</address>
                         </div>
                     </div>
 
                     <div class="col-md-4">
                         <div class="contact-phone">
                             <i class="ion-ios-telephone-outline"></i>
-                            <h3>Phone Number</h3>
-                            <p><a href="tel:+155895548855">+1 5589 55488 55</a></p>
+                            <h3>Nomor Telepon</h3>
+                            <p><a href="tel:+155895548855">+62 85743678900</a></p>
                         </div>
                     </div>
 
@@ -296,7 +276,7 @@
                         <div class="contact-email">
                             <i class="ion-ios-email-outline"></i>
                             <h3>Email</h3>
-                            <p><a href="mailto:info@example.com">info@example.com</a></p>
+                            <p><a href="mailto:info@example.com">kimkp@kulonprogokab.go.id</a></p>
                         </div>
                     </div>
 
@@ -373,5 +353,4 @@
     <script src="<?php echo base_url() . 'depan/js/main.js' ?>"></script>
 
 </body>
-
 </html>

@@ -12,14 +12,15 @@ class Administrator extends CI_Controller
     }
     function auth()
     {
-        $username = strip_tags(str_replace("'", "", $this->input->post('username', true)));
-        $password = strip_tags(str_replace("'", "", $this->input->post('password', true)));
+        $username = strip_tags(str_replace("", "", $this->input->post('username', true)));
+        $password = strip_tags(str_replace("", "", $this->input->post('password', true)));
         $cadmin = $this->m_login->cekadmin($username, $password);
         if ($cadmin->num_rows() > 0) {
             $xcadmin = $cadmin->row_array();
             $newdata = array(
                 'idadmin' => $xcadmin['pengguna_id'],
                 'username' => $xcadmin['pengguna_username'],
+                'password' => $xcadmin['pengguna_password'],
                 'nama' => $xcadmin['pengguna_nama'],
                 'level' => $xcadmin['pengguna_level'],
                 'logged_in' => true
